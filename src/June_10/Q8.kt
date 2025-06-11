@@ -1,9 +1,9 @@
 package June_10
 
-fun formatName(first: String = "", last: String = ""): String {
-    return "$first $last".trim()
-}
+class p1(val name: String, val age: Int)
 
 fun main() {
-    println("Full Name: ${formatName("Bruce", "Wayne")}")
+    val person = p1("Asish", 21)
+    println("Name: " + person.name)
+    println("Age: " + person.age)
 }

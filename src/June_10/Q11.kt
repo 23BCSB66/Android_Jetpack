@@ -1,10 +1,15 @@
 package June_10
-fun main() {
-    val s: String? = "Kotlin"
+interface Drivable {
+    fun drive()
+}
 
-    if (s != null) {
-        val reversed = s.reversed()
-        println(reversed)
+class Car : Drivable {
+    override fun drive() {
+        println("Car is driving")
     }
 }
 
+fun main() {
+    val car = Car()
+    car.drive()
+}

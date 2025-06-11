@@ -1,9 +1,11 @@
 package June_10
- fun maxOrMinusOne(list: List<Int>?): Int {
-    return list?.maxOrNull() ?: -1
+object Logger {
+    fun log(message: String) {
+        println("LOG: " + message)
+    }
 }
 
 fun main() {
-    println("Max: ${maxOrMinusOne(listOf(1, 2, 3))}")
-    println("Max: ${maxOrMinusOne(null)}")
+    Logger.log("Start")
 }
+

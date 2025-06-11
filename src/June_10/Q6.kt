@@ -1,14 +1,11 @@
 package June_10
-fun sumOfOdd(numbers: List<Int>): Int {
-    var sum = 0
-    for (num in numbers) {
-        if (num % 2 != 0) {
-            sum += num
-        }
-    }
-    return sum
-}
-
 fun main() {
-    println("Sum of Odd: ${sumOfOdd(listOf(1, 2, 3, 4, 5))}")
+    var address: String? = null
+    if (address != null) {
+        val len = address.length
+        println("Length: " + len)
+    } else {
+        println("Address is null")
+    }
 }
+//I didn't quite understand this question

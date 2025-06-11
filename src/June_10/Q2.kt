@@ -1,7 +1,14 @@
 package June_10
+fun getLength(input: String?): Int
+{
+    if (input != null) {
+        return input.length
+    }
+    return 0
+}
 
 fun main() {
-    val names = mutableListOf("Asish", "Baba", "Anna", "Watata", "Amla")
-    names.removeAll { it.startsWith(prefix = "A") }
-    println("Filtered Names: $names")
+    val str: String? = "Hello"
+    println("Length of string: " + getLength(str))
 }
+

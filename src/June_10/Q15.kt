@@ -1,10 +1,13 @@
 package June_10
+class MathUtils {
+    companion object {
+        fun square(n: Double): Double {
+            return n * n
+        }
+    }
+}
+
 fun main() {
-    val nullableStr: String? = "Batman"
-
-    println(nullableStr!!.length)
-
-    println(nullableStr?.length)
-
-    println(nullableStr ?: "Default")
+    val result = MathUtils.square(2.4)
+    println("Area: " + result)
 }

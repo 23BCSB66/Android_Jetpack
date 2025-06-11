@@ -1,8 +1,21 @@
 package June_10
-fun factorial(n: Int): Int {
-    return if (n <= 1) 1 else n * factorial(n - 1)
+class Person {
+    var name: String
+    var age: Int
+
+    constructor(name: String, age: Int) {
+        this.name = name
+        this.age = age
+    }
+
+    constructor(name: String) {
+        this.name = name
+        this.age = 12
+    }
 }
 
 fun main() {
-    println("Factorial of 5: ${factorial(5)}")
+    val p1 = Person("Hsisa")
+    println("Name: " + p1.name)
+    println("Age: " + p1.age)
 }

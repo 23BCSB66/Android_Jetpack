@@ -1,21 +1,16 @@
 package June_10
-fun mul(numberStr: String?)
-{
-    if (numberStr != null)
-    {
-        val number = numberStr.toIntOrNull()
-        if (number != null)
-        {
-            val result = number * 2
-            println("Multiplied: $result")
-        }
-        else
-        {
-            println("Multiplied: Invalid number")
-        }
-    }
-}
+data class User(val name: String, val email: String)
 
-fun main() {
-    mul("123")
+fun main()
+{
+    val u1 = User("Ash", "ash@gmail.com.com")
+    val u2 = User("Rai", "rai@gmail.com.com")
+    if (u1 == u2)
+    {
+        println("Users are equal")
+    }
+    else
+    {
+        println("Users are not equal")
+    }
 }

@@ -1,10 +1,10 @@
 package June_10
 
-fun sumString(x: Int, y: Int): String {
-    val sum = x + y
-    return "Sum of $x and $y is $sum"
-}
-
 fun main() {
-    println(sumString(4, 5))
+    val token: String? = "I'm Batman"
+    if (token != null) {
+        println("Token length: " + token.length)
+    } else {
+        println("No token")
+    }
 }

@@ -1,15 +1,18 @@
 package June_10
 
-fun longest(strings: List<String>): String {
-    var longest = ""
-    for (str in strings) {
-        if (str.length > longest.length) {
-            longest = str
-        }
+open class Animal {
+    open fun makeSound() {
+        println("Barks")
     }
-    return longest
+}
+
+class Dog : Animal() {
+    override fun makeSound() {
+        println("Woof")
+    }
 }
 
 fun main() {
-    println("Longest: ${longest(listOf("Superman", "Batman", "Spiderman"))}")
+    val dog = Dog()
+    dog.makeSound()
 }

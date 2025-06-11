@@ -1,12 +1,10 @@
 package June_10
 
 fun main() {
-    val n = (1..10).toList()
-    val even = mutableListOf<Int>()
-    for (num in n) {
-        if (num % 2 == 0) {
-            even.add(num)
-        }
+    val username: String? = "Rai"
+    if (username != null) {
+        println("Length: " + username.length)
+    } else {
+        println("Username is null")
     }
-    println("Even Numbers: $even")
 }

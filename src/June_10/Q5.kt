@@ -1,11 +1,10 @@
 package June_10
-
 fun main() {
-    val list = listOf(23, 12, 45, 11, 98)
-    val sq = mutableListOf<Int>()
-    for (num in list) {
-        sq.add(num * num)
+    val input: Any = 21
+    val age: Int? = if (input is Int) input else null
+    if (age != null) {
+        println("Age: " + age)
+    } else {
+        println("Not an Int")
     }
-    println("Squared Numbers: $sq")
 }
-

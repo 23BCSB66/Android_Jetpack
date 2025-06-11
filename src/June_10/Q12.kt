@@ -1,13 +1,15 @@
 package June_10
-fun say(num: Int?) {
-    if (num != null) {
-        println("The value is $num")
-    } else {
-        println("Value is missing")
+abstract class Shape {
+    abstract fun area(): Double
+}
+
+class Circle(val radius: Double) : Shape() {
+    override fun area(): Double {
+        return 3.14 * radius * radius
     }
 }
 
 fun main() {
-    say(10)
-    say(null)
+    val c = Circle(5.0)
+    println("Area: " + c.area())
 }
